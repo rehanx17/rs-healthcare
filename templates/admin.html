@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>Admin - Submissions</title></head>
+<body>
+    <h1>All Submissions</h1>
+    <a href="/export/excel">Download Excel</a> |
+    <a href="/export/pdf">Download PDF</a>
+    <ul>
+        {% for s in submissions %}
+        <li>{{ s.name }} ({{ s.email }}): {{ s.message }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

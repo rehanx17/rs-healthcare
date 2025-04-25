@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Appointment Confirmed</h2>
+        <p>Thank you <strong>{{ name }}</strong>! Your appointment with <strong>{{ doctor }}</strong> is scheduled on <strong>{{ date }}</strong> at <strong>{{ time }}</strong>.</p>
+        <p><a href="/">Book Another</a> | <a href="/appointments">View All Appointments</a></p>
+    </div>
+</body>
+</html>
